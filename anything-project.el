@@ -296,9 +296,10 @@ The action is to call FUNCTION with arguments ARGS."
      (files
       (with-current-buffer cands-buf
         (insert (mapconcat 'identity files "\n"))))
-     (t
-      (ap:anything-run-after-quit
-       'ap:project-files-init-msg)))))
+;;     (t
+;;      (ap:anything-run-after-quit
+;;       'ap:project-files-init-msg))
+    )))
 
 
 ;;;; %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
